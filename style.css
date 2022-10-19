@@ -15,6 +15,11 @@ main {
   padding: 0 7rem;
 }
 
+h2 {
+  padding: 2rem 0;
+  margin: 0;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -41,7 +46,6 @@ header {
   text-align: center;
 }
 .explorer h2 {
-  margin-top: 2rem;
   font-size: 2rem;
 }
 .explorer p {
@@ -96,8 +100,9 @@ header {
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 1rem;
+  top: 50%;
   left: -1rem;
+  transform: translateY(-50%);
 }
 .tuto li:hover {
   transform: scale(1.02);
@@ -112,19 +117,24 @@ header {
 .menus {
   background-color: #f6f6f6;
 }
-.menus h2 {
-  margin-bottom: 2rem;
-}
 .menus .menus__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+@media (max-width: 1000px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .menus .card {
   border: 1px solid black;
-  height: 4rem;
-  flex-grow: 1;
-  min-width: 30rem;
+}
+.menus .card .card__image {
+  background-image: url("../../assets/menu-1.jpg");
+  height: 15rem;
+  border-radius: 3rem;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
