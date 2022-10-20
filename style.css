@@ -20,6 +20,15 @@ h2 {
   margin: 0;
 }
 
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -144,7 +153,7 @@ header {
 }
 .menus .card__image {
   height: 15rem;
-  border-radius: 3rem;
+  border-radius: 1rem 1rem 0 0;
   background-size: cover;
 }
 .menus .card__image-1 {
@@ -158,6 +167,22 @@ header {
 }
 .menus .card__image-4 {
   background-image: url("restaurants/menu-4.jpg");
+}
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3, .menus .card__description p {
+  margin: 0.5rem;
+}
+.menus .card__description h3 {
+  padding-top: 0.5rem;
+}
+.menus .card__description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
