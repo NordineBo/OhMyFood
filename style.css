@@ -127,12 +127,22 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.menus .card .card__image {
-  border: 1px solid black;
-  background: url(restaurants/menu-1.jpg);
+.menus .card__image {
   height: 15rem;
   border-radius: 3rem;
   background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url(restaurants/menu-1.jpg);
+}
+.menus .card__image-2 {
+  background-image: url(restaurants/menu-2.jpg);
+}
+.menus .card__image-3 {
+  background-image: url(restaurants/menu-3.jpg);
+}
+.menus .card__image-4 {
+  background-image: url(restaurants/menu-4.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
