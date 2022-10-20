@@ -1,5 +1,4 @@
-.menus 
-{
+.menus {
     background-color: #f6f6f6;
 
 
@@ -14,12 +13,13 @@
 }
 
 .card{
+ & .card__image {  
     border: 1px solid black;
-    & .card__image{    
-    background-image: url("../../assets/menu-1.jpg");   
+    background: url(restaurants/menu-1.jpg);
     height: 15rem;
     border-radius: 3rem;
     background-size: cover;
+    
     }
 
 }
