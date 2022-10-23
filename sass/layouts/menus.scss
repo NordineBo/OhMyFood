@@ -46,16 +46,7 @@
     position: relative;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
-    &::before{
-        display: inline-block;
-        font-size: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 free";
-        font-weight: 900;
-        content: "\f004";
-    }
+
     h3, p {
         padding: 0.3rem;
         
