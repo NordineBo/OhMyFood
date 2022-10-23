@@ -179,6 +179,16 @@ header {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
 }
+.menus .card__description::before {
+  display: inline-block;
+  font-size: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  content: "\f004";
+}
 .menus .card__description h3, .menus .card__description p {
   padding: 0.3rem;
 }
@@ -215,6 +225,10 @@ footer h2 {
 }
 footer p {
   padding: 0.2rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
