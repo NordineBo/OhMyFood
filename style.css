@@ -218,17 +218,39 @@ footer p {
 }
 
 .banner img {
+  display: block;
   width: 100%;
   height: 70vh;
   object-fit: cover;
   object-position: center bottom;
 }
 
-.resto__main {
+.resto__title {
   padding: 0 1rem;
 }
-.resto__main h2 {
+.resto__title h2 {
   font-family: "Shrikhand", "sans-serif";
+  padding: 2rem 1rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.menus-grid {
+  background: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .menus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.menus-grid > * {
+  border: 1px solid red;
+}
+
+.resto-main {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
