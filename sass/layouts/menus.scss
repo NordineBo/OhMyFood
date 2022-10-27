@@ -1,5 +1,6 @@
 @import "../utils/linear-gradient.scss";
 
+#homepage{
 .menus {
     background-color: #f6f6f6;
     margin-bottom: 2rem;
@@ -73,6 +74,7 @@
         opacity: 1;
         transform: translateY(-50%) scale(1.2);
     }
+}
 }
 }
 }

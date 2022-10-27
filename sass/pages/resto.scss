@@ -1,4 +1,5 @@
 
+#page-resto{
 .banner img{
     display: block;
     width: 100%;
@@ -10,32 +11,38 @@
 
 .resto__title{
     
-    
     padding: 0 1rem;
      h2{
         
         font-family: "Shrikhand", "sans-serif";
         padding: 2rem 1rem;
-        border-radius: 2rem 2rem 0 0;
+        border-radius: 2rem 2rem 0 0; 
+        background-color: #f6f6f6;
         
-    }
-}
-
-.menus-grid{
-    background: yellow;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    @media (max-width: 1000px){
-        grid-template-columns: 1fr;
-    }
-    & > * {
-        border: 1px solid red;
     }
 }
 
 .resto-main{
     padding: 0 1rem;
+    background-color: #f6f6f6;
    
 }
+
+.menus{
+                           
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+   
+    @media (max-width: 1000px){
+        grid-template-columns: 1fr;
+    }
+    .menu__category {
+        border: 1px solid red;
+        background-color: white;
+       
+    }
+}
+}
+
  
