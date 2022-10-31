@@ -28,6 +28,7 @@
    
 }
 
+
 .menus{
                            
     display: grid;
@@ -37,15 +38,35 @@
     @media (max-width: 1000px){
         grid-template-columns: 1fr;
     }
+
+    h3{
+        text-transform: uppercase;
+        font-weight: 400;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 1.5rem;
+                left: 0;
+                height: 0.25rem;
+                width: 3rem;
+                background-color: #99e2d0;
+    
+            }
+
+    }
+  
     .menu__category {
-        background-color: white;
+     
         overflow: hidden;
 
         .menu-item{
             display: flex;
+            background-color: white;
             border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 2px 1px 8px -3px #000000;
+            margin: 0.5rem;
+            box-shadow: 2px 1px 8px -3px lightgrey;
 
         .menu-item__price{
             margin-left: auto;

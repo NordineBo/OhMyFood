@@ -243,15 +243,30 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+#page-resto .menus h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+#page-resto .menus h3::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99e2d0;
+}
 #page-resto .menus .menu__category {
-  background-color: white;
   overflow: hidden;
 }
 #page-resto .menus .menu__category .menu-item {
   display: flex;
+  background-color: white;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 2px 1px 8px -3px #000000;
+  margin: 0.5rem;
+  box-shadow: 2px 1px 8px -3px lightgrey;
 }
 #page-resto .menus .menu__category .menu-item .menu-item__price {
   margin-left: auto;
