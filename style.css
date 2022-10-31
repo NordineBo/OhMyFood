@@ -70,6 +70,7 @@ header {
   border-radius: 2rem;
   transition: transform 200ms;
   margin-top: 1rem;
+  cursor: pointer;
   box-shadow: 2px 1px 16px -3px #000000;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
@@ -213,6 +214,21 @@ footer p {
   padding: 0.2rem;
 }
 
+#page-resto header::before {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
 #page-resto .banner img {
   display: block;
   width: 100%;
@@ -303,6 +319,9 @@ footer p {
   border-radius: 1rem;
   color: #99e2d0;
 }
+#page-resto .menus .menu__category .menu-item:hover {
+  cursor: pointer;
+}
 #page-resto .menus .menu__category .menu-item:hover .menu-item__check {
   margin-right: 0;
 }
@@ -316,6 +335,28 @@ footer p {
   100% {
     transform: rotate(0);
   }
+}
+#page-resto section.order {
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+#page-resto section.order button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  transition: transform 200ms;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 1px 16px -3px #000000;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+#page-resto section.order button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

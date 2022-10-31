@@ -1,5 +1,22 @@
-
+@import "../utils/box-shadow.scss";
+@import "../utils/linear-gradient.scss";
 #page-resto {
+    header::before{
+        
+        display: inline-block;
+        position: absolute;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: (900);
+        content: "\f060";
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 25px;
+    }
 .banner img{
     display: block;
     width: 100%;
@@ -109,6 +126,7 @@
             }
     
         &:hover {
+            cursor: pointer;
             .menu-item__check{
             margin-right: 0;
             }
@@ -127,6 +145,29 @@
        
     }
 }
+}
+
+section.order{
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    button{
+        color: white;
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 2rem;
+        transition: transform 200ms;
+        margin-top: 1rem;
+        cursor: pointer;
+        @include base-shadow;
+        @include gradient(0.9);
+    }
+    & button:hover{
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
 }
 }
  
