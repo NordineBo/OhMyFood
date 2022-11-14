@@ -271,6 +271,7 @@ footer p {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
+  margin-bottom: 1rem;
 }
 #page-resto .menus h3::after {
   content: "";

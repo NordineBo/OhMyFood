@@ -64,6 +64,7 @@
         text-transform: uppercase;
         font-weight: 400;
             position: relative;
+            margin-bottom: 1rem;
             &::after{
                 content: "";
                 position: absolute;
