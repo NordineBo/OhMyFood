@@ -1,8 +1,10 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/linear-gradient.scss";
+@import "../utils/animation.scss";
 #page-resto {
-    header::before{
-        
+    header{
+ 
+        &::before{ 
         display: inline-block;
         position: absolute;
         font-style: normal;
@@ -16,7 +18,9 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 25px;
+    }   
     }
+
 .banner img{
     display: block;
     width: 100%;
@@ -74,16 +78,27 @@
     }
   
     .menu__category {
-     
         overflow: hidden;
 
+
         .menu-item{
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+                
+            }
+    
             display: flex;
             background-color: white;
             border-radius: 1rem;
             overflow: hidden;
             margin: 0.5rem;
             box-shadow: 2px 1px 8px -3px lightgrey;
+            animation: appear 1s;
+            animation-fill-mode: both;
+            
+            
 
         .menu-item__price{
             margin-left: auto;
@@ -91,6 +106,7 @@
             padding: 2rem;
             display: flex;
             align-items: flex-end;
+       
                
             }
             .menu-item__description{
@@ -101,6 +117,7 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+      
                 }
             }
             .menu-item__check{
@@ -113,6 +130,7 @@
             margin-right: -1 * $button-width;
             width: $button-width;
             transition: margin-right 0.5s;
+           
 
             i{
                 display: grid;
