@@ -14,6 +14,8 @@
 }
 & li {
     position: relative;
+    display: flex;
+    align-items: center;
     &::before {
         content: counter(steps);
         counter-increment: steps;
@@ -37,6 +39,8 @@
     &:hover{ 
     @include zoom;
     @include base-shadow;
+   background-color: lighten($color: rgb(128, 0, 107), $amount: 71%);
+
     }
     & i.fas{
     margin-right: 1rem;
