@@ -2,16 +2,17 @@
 @import "../utils/linear-gradient.scss";
 .explorer{
     text-align: center;
-
-
+    margin: 2rem;
 & h2{
    
     font-size: 2rem;
+    margin: 1rem;
 }
 & p{
     font-size: 1rem;
 }
 & button{
+    
     color: white;
     font-weight: 300;
     font-size: 1.5rem;
@@ -23,6 +24,7 @@
     cursor: pointer;
     @include base-shadow;
     @include gradient(0.9);
+   
 }
 & button:hover{
     transform: scale(1.02);
