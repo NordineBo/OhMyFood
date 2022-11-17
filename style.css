@@ -357,7 +357,8 @@ footer p {
   padding: 1rem;
   overflow: hidden;
 }
-#page-resto .menus .menu__category .menu-item .menu-item__description h4, #page-resto .menus .menu__category .menu-item .menu-item__description p {
+#page-resto .menus .menu__category .menu-item .menu-item__description h4,
+#page-resto .menus .menu__category .menu-item .menu-item__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -371,12 +372,13 @@ footer p {
   margin-right: -4rem;
   width: 4rem;
   transition: margin-right 0.5s;
+  padding-left: 15px;
 }
 #page-resto .menus .menu__category .menu-item .menu-item__check i {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;

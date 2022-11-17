@@ -4,7 +4,8 @@
   "description": "P3 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "prefix": "postcss style.css -u autoprefixer -o ./prefix/style.auto.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/NordineBo/OhMyFood#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.55.0"
   }
 }
