@@ -1,5 +1,6 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/zoom.scss";
+@import "../utils/linear-gradient.scss";
 
 
 .tuto {
@@ -39,7 +40,8 @@
     &:hover{ 
     @include zoom;
     @include base-shadow;
-   background-color: lighten($color: rgb(128, 0, 107), $amount: 71%);
+   background-color: linear-gradient(red, blue);
+   @include gradient(0.04);
 
     }
     & i.fas{

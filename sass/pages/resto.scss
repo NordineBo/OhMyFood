@@ -25,35 +25,41 @@
     .banner img {
         display: block;
         width: 100%;
-        height: 70vh;
+        height: 40vh;
         object-fit: cover;
         object-position: center;
-
+    
     }
 
     .resto__title {
-
-        padding: 0 1rem;
+        
+        margin-top: -3rem;
+        
+        
 
         h2 {
-
+            
+            position: relative;
             font-family: "Shrikhand", "sans-serif";
             padding: 2rem 1rem;
-            border-radius: 2rem 2rem 0 0;
             background-color: #f6f6f6;
-
+            border-radius: 2rem 2rem 0 0;
+           
+            
         }
     }
 
     .resto-main {
+        
         padding: 0 1rem;
         background-color: #f6f6f6;
-
+        margin-top: -1.3rem;
+        
     }
 
 
     .menus {
-
+        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
