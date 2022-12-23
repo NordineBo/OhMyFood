@@ -90,7 +90,6 @@
         .menu__category {
             overflow: hidden;
 
-
             .menu-item {
                 @for $i from 2 through 4 {
                     &:nth-child(#{$i}) {
