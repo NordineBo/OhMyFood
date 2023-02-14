@@ -43,44 +43,44 @@
 
 
     }
-@for $i from 1 through 4{
-    &__image-#{$i} {
-        background-image: url("restaurants/menu-#{$i}.jpg");
-
+    @for $i from 1 through 4{
+        &__image-#{$i} {
+            background-image: url("restaurants/menu-#{$i}.jpg");
+    
+        }
     }
-}
-&__description {
-    position: relative;
-    background-color: white;
-    border-radius: 0 0 1rem 1rem;
-
-    h3, p {
-        padding: 0.3rem;
-        
+    &__description {
+        position: relative;
+        background-color: white;
+        border-radius: 0 0 1rem 1rem;
+    
+        h3, p {
+            padding: 0.3rem;
+            
+        }
+      
+        i {
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+    
+        }
+        .fas {
+            color: transparent;
+            background-image: linear-gradient(red, blue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 200ms ease-in-out;
+            @include gradient(1);
+        }
+        &:hover .fas{
+            opacity: 1;
+            transform: translateY(-50%) scale(1.2);
+        }
     }
-  
-    i {
-        font-size: 2rem;
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-
     }
-    .fas {
-        color: transparent;
-        background-image: linear-gradient(red, blue);
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        transition: all 200ms ease-in-out;
-        @include gradient(1);
-    }
-    &:hover .fas{
-        opacity: 1;
-        transform: translateY(-50%) scale(1.2);
-    }
-}
-}
 }
 }
