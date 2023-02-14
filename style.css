@@ -14,7 +14,7 @@ body {
 main {
   padding: 0rem;
 }
-@media (min-width: 300px) {
+@media (max-width: 1000px) {
   main {
     padding: 0rem;
   }
@@ -204,7 +204,7 @@ header {
   top: 1rem;
 }
 #homepage .menus .card__image {
-  height: 17rem;
+  height: 11rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
