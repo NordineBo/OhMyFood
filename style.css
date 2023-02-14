@@ -14,7 +14,7 @@ body {
 main {
   padding: 0rem;
 }
-@media (max-width: 1000px) {
+@media (min-width: 300px) {
   main {
     padding: 0rem;
   }
@@ -129,7 +129,7 @@ header {
   display: flex;
   gap: 2rem;
 }
-@media (max-width: 1000px) {
+@media screen and (min-width: 300px) {
   .tuto ol {
     flex-direction: column;
   }
@@ -183,7 +183,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-@media (max-width: 1000px) {
+@media screen and (min-width: 300px) {
   #homepage .menus .menus__cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -318,7 +318,7 @@ footer p {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
-@media (max-width: 1000px) {
+@media screen and (min-width: 300px) {
   #page-resto .menus {
     grid-template-columns: 1fr;
   }
