@@ -21,7 +21,7 @@ main {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3, h4, h5, h6, p {
@@ -69,6 +69,7 @@ header {
 }
 .explorer p {
   font-size: 1rem;
+  color: grey;
 }
 .explorer button {
   color: white;
@@ -145,6 +146,7 @@ header {
   border-radius: 1rem;
   margin-right: 1.5rem;
   margin-left: -0.5rem;
+  font-weight: bold;
 }
 .tuto li::before {
   content: counter(steps);
