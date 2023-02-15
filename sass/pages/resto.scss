@@ -73,6 +73,7 @@
             font-weight: 400;
             position: relative;
             margin-bottom: 1rem;
+            margin-left: 0.7rem;
 
             &::after {
                 content: "";
@@ -89,6 +90,7 @@
 
         .menu__category {
             overflow: hidden;
+            margin-left: -0.7rem;
 
             .menu-item {
                 @for $i from 2 through 4 {

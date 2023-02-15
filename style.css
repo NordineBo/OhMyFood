@@ -326,6 +326,7 @@ footer p {
   font-weight: 400;
   position: relative;
   margin-bottom: 1rem;
+  margin-left: 0.7rem;
 }
 #page-resto .menus h3::after {
   content: "";
@@ -338,6 +339,7 @@ footer p {
 }
 #page-resto .menus .menu__category {
   overflow: hidden;
+  margin-left: -0.7rem;
 }
 #page-resto .menus .menu__category .menu-item {
   display: flex;
