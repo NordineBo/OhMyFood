@@ -61,11 +61,11 @@
     .menus {
         
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+        grid-template-columns: 1fr;
 
-        @media screen and (min-width: 300px) {
-            grid-template-columns: 1fr;
+        @media (min-width: 1000px) {
+            grid-template-columns: 1fr 1fr 1fr;   
         }
 
         h3 {

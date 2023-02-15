@@ -14,11 +14,6 @@ body {
 main {
   padding: 0rem;
 }
-@media (max-width: 1000px) {
-  main {
-    padding: 0rem;
-  }
-}
 
 h1 {
   font-size: 2rem;
@@ -124,14 +119,16 @@ header {
 .tuto {
   counter-reset: steps;
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 .tuto ol {
   display: flex;
   gap: 2rem;
+  flex-direction: column;
 }
-@media screen and (min-width: 300px) {
+@media (min-width: 1000px) {
   .tuto ol {
-    flex-direction: column;
+    flex-direction: unset;
   }
 }
 .tuto li {
@@ -145,7 +142,7 @@ header {
   flex-grow: 1;
   border-radius: 1rem;
   margin-right: 1.5rem;
-  margin-left: -0.5rem;
+  margin-left: -2rem;
   font-weight: bold;
 }
 .tuto li::before {
@@ -180,12 +177,12 @@ header {
 }
 #homepage .menus .menus__cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
-@media screen and (min-width: 300px) {
+@media (min-width: 1000px) {
   #homepage .menus .menus__cards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 #homepage .menus .menus__cards .new {
@@ -228,7 +225,8 @@ header {
   border-radius: 0 0 1rem 1rem;
   box-shadow: 0px 0px 5px 0px lightgray;
 }
-#homepage .menus .card__description h3, #homepage .menus .card__description p {
+#homepage .menus .card__description h3,
+#homepage .menus .card__description p {
   padding: 0.3rem;
 }
 #homepage .menus .card__description i {
@@ -247,7 +245,7 @@ header {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
-#homepage .menus .card__description:hover .fas {
+#homepage .menus .card__description .fas:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
@@ -315,12 +313,12 @@ footer p {
 }
 #page-resto .menus {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  grid-template-columns: 1fr;
 }
-@media screen and (min-width: 300px) {
+@media (min-width: 1000px) {
   #page-resto .menus {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 #page-resto .menus h3 {

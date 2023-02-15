@@ -1,87 +1,95 @@
 @import "../utils/linear-gradient.scss";
 
-#homepage{
-.menus {
-    background-color: #f6f6f6;
-    padding: 2rem;
+#homepage {
+    .menus {
+        background-color: #f6f6f6;
+        padding: 2rem;
 
 
-.menus__cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    @media screen and (min-width: 300px){
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .new{   
-        position: relative;
-    }
-    .new::before{
-        content: "Nouveau";
-        position: absolute;
-        height: 2rem;
-        width: 5rem;  
-        background-color: #99e2d0; 
-        color: darken(#99e2d0, 50%);
-        display: grid;
-        place-items: center;
-        right: 1rem;
-        top: 1rem;
-        
- }
-    
-}
+        .menus__cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            @media (min-width: 1000px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-.card{
- &__image {  
-    height: 11rem;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-    background-size: cover;
-    background-position: center;
+            gap: 2rem;
+
+            .new {
+                position: relative;
+            }
+
+            .new::before {
+                content: "Nouveau";
+                position: absolute;
+                height: 2rem;
+                width: 5rem;
+                background-color: #99e2d0;
+                color: darken(#99e2d0, 50%);
+                display: grid;
+                place-items: center;
+                right: 1rem;
+                top: 1rem;
+
+            }
+
+        }
+
+        .card {
+            &__image {
+                height: 11rem;
+                width: 100%;
+                border-radius: 1rem 1rem 0 0;
+                background-size: cover;
+                background-position: center;
 
 
 
-    }
-    @for $i from 1 through 4{
-        &__image-#{$i} {
-            background-image: url("restaurants/menu-#{$i}.jpg");
-    
+            }
+
+            @for $i from 1 through 4 {
+                &__image-#{$i} {
+                    background-image: url("restaurants/menu-#{$i}.jpg");
+
+                }
+            }
+
+            &__description {
+                position: relative;
+                background-color: white;
+                border-radius: 0 0 1rem 1rem;
+                box-shadow: 0px 0px 5px 0px lightgray;
+
+                h3,
+                p {
+                    padding: 0.3rem;
+
+                }
+
+                i {
+                    font-size: 2rem;
+                    position: absolute;
+                    right: 1rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                }
+
+                .fas {
+                    color: transparent;
+                    background-image: linear-gradient(red, blue);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    opacity: 0;
+                    transition: all 200ms ease-in-out;
+                    @include gradient(1);
+                }
+
+                & .fas:hover {
+                    opacity: 1;
+                    transform: translateY(-50%) scale(1.2);
+                }
+            }
         }
     }
-    &__description {
-        position: relative;
-        background-color: white;
-        border-radius: 0 0 1rem 1rem;
-        box-shadow: 0px 0px 5px 0px lightgray;
-    
-        h3, p {
-            padding: 0.3rem;
-            
-        }
-      
-        i {
-            font-size: 2rem;
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-    
-        }
-        .fas {
-            color: transparent;
-            background-image: linear-gradient(red, blue);
-            background-clip: text;
-            -webkit-background-clip: text;
-            opacity: 0;
-            transition: all 200ms ease-in-out;
-            @include gradient(1);
-        }
-        &:hover .fas{
-            opacity: 1;
-            transform: translateY(-50%) scale(1.2);
-        }
-    }
-    }
-}
 }
